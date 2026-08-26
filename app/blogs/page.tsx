@@ -32,6 +32,17 @@ const posts = [
     accent: 'from-slate-500/25 via-slate-400/10 to-transparent',
     
   },
+  {
+    title: 'How to Qualify for a Pre Construction Property Loan in Canada (2026)',
+    description:
+      'A practical guide to qualifying for a pre construction property loan in Canada, including tips for first-time buyers, investors, and those with less-than-perfect credit.',
+    category: 'Financing Guide',
+    readTime: '8 min read',
+    date: 'August 20, 2026',
+    href: '/blog-3',
+    image: '/precon-loan.jpg',
+    accent: 'from-cyan-500/20 via-indigo-500/10 to-transparent',
+  }
 //   {
 //     title: 'Another article slot',
 //     description:
