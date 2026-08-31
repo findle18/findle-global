@@ -85,6 +85,27 @@ const getDeveloperPageRoute = (developerName?: string): string | null => {
   if (normalized.includes('arista') && normalized.includes('homes')) {
     return '/developers/arista-homes';
   }
+  if (normalized.includes('yorkwood') && normalized.includes('homes')) {
+    return '/developers/yorkwood-homes';
+  }
+  if (normalized.includes('bosseini') && normalized.includes('living')) {
+    return '/developers/bosseini-living';
+  }
+  if (normalized.includes('empire') && normalized.includes('communities')) {
+    return '/developers/empire-communities';
+  }
+  if (normalized.includes('tridel')) {  
+    return '/developers/tridel-homes';
+  }
+  if (normalized.includes('remington')){
+    return '/developers/remington-homes';
+  }
+  if(normalized.includes('cachet')&&normalized.includes('homes')){
+    return '/developers/cachet-homes';
+  }
+  if(normalized.includes('solmar')&&normalized.includes('development')){
+    return '/developers/solmar-development';
+  }
   return null;
 };
 
