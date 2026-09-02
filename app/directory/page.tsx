@@ -435,7 +435,7 @@ useEffect(() => {
                   <div className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-between lg:items-center gap-6 font-mono">
                     <div>
                       <div className="text-[9px] text-slate-500 uppercase tracking-widest">
-                        DEVELOPER // {featured.developer || 'Independent Builder'}
+                        DEVELOPER - {featured.developer || 'Independent Builder'}
                       </div>
                       <h2 className="text-xl font-bold tracking-tight text-white uppercase mt-1 group-hover:text-amber-300 transition-colors">
                         {featured.title}
@@ -572,7 +572,7 @@ useEffect(() => {
                   <div className="flex flex-1 flex-col p-6">
                     <div className="flex-1">
                       <div className="text-[9px] font-mono tracking-widest text-slate-500 uppercase">
-                        DEV // {property.developer || 'Independent'}
+                        DEVELOPER - {property.developer || 'Independent'}
                       </div>
                       <h3 className="mt-2 text-lg font-bold tracking-tight text-white group-hover:text-indigo-300 transition-colors font-mono uppercase line-clamp-1">
                         {property.title}

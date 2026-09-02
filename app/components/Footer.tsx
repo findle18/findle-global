@@ -269,7 +269,7 @@ export default function Footer() {
         {/* Legal Links */}
 <div className="flex flex-wrap items-center justify-between gap-4">
   <div className="text-[10px] text-slate-600 tracking-wider">
-    © 2025 Findle Global Inc. All Rights Reserved.
+    © 2026 Findle Global Inc. All Rights Reserved.
   </div>
   <div className="flex flex-wrap gap-4 text-[10px] text-slate-600">
     {[

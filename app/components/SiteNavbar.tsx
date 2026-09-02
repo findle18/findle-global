@@ -22,9 +22,12 @@ export default function SiteNavbar() {
         </div>
 
         <div className="hidden items-center gap-8 text-[11px] font-mono uppercase tracking-widest text-slate-400 md:flex">
-          <span className="flex items-center gap-1 text-indigo-400 transition hover:text-indigo-300">
+          {/* <span className="flex items-center gap-1 text-indigo-400 transition hover:text-indigo-300">
             <span className="text-[9px]">&gt;</span> Browse
-          </span>
+          </span> */}
+          <Link href="/blogs" className="transition duration-300 hover:text-white">
+            Journal
+          </Link>
           <Link href="/directory" className="transition duration-300 hover:text-white">
             Listings
           </Link>

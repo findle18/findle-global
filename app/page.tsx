@@ -5,7 +5,7 @@ import LogoutButton from './components/LogoutButton';
 import Footer from './components/Footer';
 
 export default async function Home() {
-  const totalProperties = 858;
+  const totalProperties = 700;
   let liveProperties: any[] = [];
   
   // Fetch real-time data directly from both database tables in parallel on the server
@@ -104,9 +104,12 @@ export default async function Home() {
    
           
           <div className="hidden md:flex items-center gap-8 text-[11px] font-mono tracking-widest uppercase text-slate-400">
-            <span className="text-indigo-400 cursor-pointer flex items-center gap-1 hover:text-indigo-300 transition">
+            {/* <span className="text-indigo-400 cursor-pointer flex items-center gap-1 hover:text-indigo-300 transition">
               <span className="text-[9px]">&gt;</span> Browse
-            </span>
+            </span> */}
+            <Link href="/blogs" className="hover:text-white cursor-pointer transition duration-300">
+              Journal
+            </Link>
             <Link href="/directory" className="hover:text-white cursor-pointer transition duration-300">
               Listings
             </Link>
@@ -160,12 +163,12 @@ export default async function Home() {
           </header>
 
           {/* Advanced Stats Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-18 mt-16 mb-12">
             {[
-              { label: 'PROPERTIES LISTED', value: totalProperties, unit: '' },
+              { label: 'PROPERTIES LISTED', value: totalProperties+"+", unit: '' },
               { label: 'CITIES LISTED', value: '20+', unit: '' },
               { label: 'BUILDERS LISTED', value: '100+', unit: '' },
-              { label: 'MARKET COVERAGE', value: '24/7', unit: '' }
+              // { label: 'MARKET COVERAGE', value: '24/7', unit: '' }
             ].map((stat, idx) => (
               <div key={idx} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-purple-600/10 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-300" />
@@ -305,7 +308,7 @@ export default async function Home() {
               // Safe completion calculation handling fallback logic cleanly
               const completionText = property.completionYear 
                 ? `Q${Math.ceil((property.completionYear % 12 || 12) / 3)}_${property.completionYear}`
-                : "Q4_2027";
+                : "2027";
 
               // Dynamically resolve naming fields depending on structural schema context
               const displayTitle = property.title || property.name || "UNNAMED ASSET node";
@@ -351,7 +354,7 @@ export default async function Home() {
                     <div className="flex-1">
                       {/* System Tags */}
                       <div className="flex items-center justify-between text-[9px] font-mono tracking-widest text-slate-500 uppercase">
-                        <span className="hover:text-slate-400 transition">DEV // {property.developer || 'INDEPENDENT BUILDER'}</span>
+                        <span className="hover:text-slate-400 transition">x {property.developer || 'INDEPENDENT BUILDER'}</span>
                         
                       </div>
                       
@@ -436,7 +439,7 @@ export default async function Home() {
       {/* Stats row */}
       <div className="flex flex-wrap justify-center gap-12 mb-10 font-mono">
         {[
-          { label: 'PROPERTIES', value: '758+' },
+          { label: 'PROPERTIES', value: '700+' },
           { label: 'CITIES COVERED', value: '19' },
           // { label: 'PLATFORM STATUS', value: 'ONLINE' },
         ].map((stat, idx) => (
