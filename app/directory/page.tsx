@@ -440,9 +440,9 @@ useEffect(() => {
                       <h2 className="text-xl font-bold tracking-tight text-white uppercase mt-1 group-hover:text-amber-300 transition-colors">
                         {featured.title}
                       </h2>
-                      <p className="text-xs text-slate-400 mt-2 max-w-xl font-sans leading-relaxed">
+                      {/* <p className="text-xs text-slate-400 mt-2 max-w-xl font-sans leading-relaxed">
                        An exclusive enclave of 59 executive two-car garage detached homes by award winning Hallett Homes. Coming very soon to South Brampton at Mississauga Road and Steeles.
-                      </p>
+                      </p> */}
                         
                       <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-[11px]">
                         <span className="text-slate-500">ZONE: <strong className="text-slate-300 uppercase">{featured.city}</strong></span>
