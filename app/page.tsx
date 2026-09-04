@@ -115,9 +115,9 @@ export default async function Home() {
             </Link>
             <AdminNavLink />
             <LogoutButton />
-            <Link href="/portal" className="hover:text-white cursor-pointer transition duration-300">
+            {/* <Link href="/portal" className="hover:text-white cursor-pointer transition duration-300">
               Login
-            </Link>
+            </Link> */}
             <Link href="/FindleFinance" className="hover:text-white cursor-pointer transition duration-300">
             Finance
           </Link>

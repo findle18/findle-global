@@ -33,9 +33,9 @@ export default function SiteNavbar() {
           </Link>
           <AdminNavLink />
           <LogoutButton />
-          <Link href="/portal" className="transition duration-300 hover:text-white">
+          {/* <Link href="/portal" className="transition duration-300 hover:text-white">
             Login
-          </Link>
+          </Link> */}
           <Link href="/FindleFinance" className="transition duration-300 hover:text-white">
             Finance
           </Link>
