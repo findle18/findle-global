@@ -85,7 +85,19 @@ export default function ContactPage() {
               <input type="email" name="email" placeholder="Email Address" required className="bg-transparent border border-slate-700 p-3 rounded-lg focus:border-indigo-500 outline-none transition" />
               <ValidationError prefix="Email" field="email" errors={state.errors} />
               
-              <input type="tel" name="phone" placeholder="Phone (Optional)" className="bg-transparent border border-slate-700 p-3 rounded-lg focus:border-indigo-500 outline-none transition" />
+              <input
+                type="tel"
+                name="phone"
+                inputMode="numeric"
+                minLength={10}
+                maxLength={10}
+                pattern="[0-9]{10}"
+                placeholder="Phone (Optional)"
+                onInput={(e) => {
+                  e.currentTarget.value = e.currentTarget.value.replace(/\D/g, '').slice(0, 10);
+                }}
+                className="bg-transparent border border-slate-700 p-3 rounded-lg focus:border-indigo-500 outline-none transition"
+              />
               
               <select name="role" className="bg-transparent border border-slate-700 p-3 rounded-lg focus:border-indigo-500 outline-none text-slate-400">
                 <option>I am a...</option>

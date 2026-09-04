@@ -812,9 +812,16 @@ export default function ProjectDetailPage({ params }: PageProps) {
                 <input
                   type="tel"
                   required
-                  placeholder="+1 (XXX) XXX-XXXX"
+                  inputMode="numeric"
+                  minLength={10}
+                  maxLength={10}
+                  pattern="[0-9]{10}"
+                  placeholder="XXXXXXXXXX"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) => {
+                    const phone = e.target.value.replace(/\D/g, '').slice(0, 10);
+                    setFormData({ ...formData, phone });
+                  }}
                   className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-white outline-none focus:border-indigo-500 tracking-wider"
                 />
               </div>
