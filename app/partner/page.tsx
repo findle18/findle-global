@@ -102,7 +102,7 @@ export default function PartnerPage() {
         <div className="text-center border-t border-slate-800 pt-12">
           <p className="text-slate-500 mb-6">Not sure which partnership is right for you? Let's talk.</p>
           <div className="flex flex-col md:flex-row justify-center gap-8 text-sm">
-            <a href="tel:+14374320003" className="hover:text-indigo-400 transition-colors">📞 +1 (437) 432-0003</a>
+            <a href="tel:+19058054955" className="hover:text-indigo-400 transition-colors">📞 +1 (905) 805-4955</a>
             <a href="mailto:connect@findle.global" className="hover:text-indigo-400 transition-colors">📧 connect@findle.global</a>
           </div>
         </div>

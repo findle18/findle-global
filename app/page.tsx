@@ -3,6 +3,15 @@ import { supabase } from '../lib/supabase';
 import AdminNavLink from './components/AdminNavLink';
 import LogoutButton from './components/LogoutButton';
 import Footer from './components/Footer';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Pre-Construction Condos, Towns & Homes in Ontario | Findle Global',
+  description: 'Browse 700+ pre-construction condos, townhomes and detached homes across Ontario. Live pricing, floor plans, builder track records and market insights — all in one place.',
+  alternates: {
+    canonical: 'https://www.findle.global/',
+  },
+};
 
 export default async function Home() {
   const totalProperties = 700;
@@ -140,9 +149,9 @@ export default async function Home() {
             </div> */}
             
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-white uppercase leading-tight mb-6">
-              discover <br />
+              Discover <br />
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent animate-pulse">
-                tomorrow today
+                Tomorrow Today
               </span>
             </h1>
             
@@ -166,7 +175,7 @@ export default async function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-18 mt-16 mb-12">
             {[
               { label: 'PROPERTIES LISTED', value: totalProperties+"+", unit: '' },
-              { label: 'CITIES LISTED', value: '20+', unit: '' },
+              { label: 'CITIES LISTED', value: '19', unit: '' },
               { label: 'BUILDERS LISTED', value: '100+', unit: '' },
               // { label: 'MARKET COVERAGE', value: '24/7', unit: '' }
             ].map((stat, idx) => (

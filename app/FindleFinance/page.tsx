@@ -100,7 +100,7 @@ export default function FindleFinance() {
 								</div>
 
 									<div className="pt-2 border-t border-slate-700/30">
-										<a href="tel:+14374320003" className="block w-full text-center px-4 py-2 rounded-md bg-indigo-600 text-white font-bold">Call +1 (437) 432-0003</a>
+										<a href="tel:+19058054955" className="block w-full text-center px-4 py-2 rounded-md bg-indigo-600 text-white font-bold">Call +1 (905) 805-4955</a>
 										<a href="mailto:finance@findle.global" className="block w-full text-center mt-3 px-4 py-2 rounded-md border border-slate-700 text-slate-300">Email Connect</a>
 										<Link href="/contact" className="block text-center mt-3 text-indigo-300 font-bold">Book a Free Consultation →</Link>
 									</div>
@@ -203,7 +203,7 @@ export default function FindleFinance() {
 					<h3 className="text-2xl font-black text-white mb-3">Ready to Get Financed?</h3>
 					<p className="text-slate-400 mb-6">Talk to a Findle Finance mortgage agent today. No obligation. No pressure. Just clarity on what you qualify for and what your options look like.</p>
 					<div className="flex gap-4">
-						<a href="tel:+14374320003" className="px-6 py-3 rounded-xl bg-white text-black font-black text-xs uppercase tracking-widest">Call +1 (437) 432-0003</a>
+						<a href="tel:+19058054955" className="px-6 py-3 rounded-xl bg-white text-black font-black text-xs uppercase tracking-widest">Call +1 (905) 805-4955</a>
 						{/* <a href="mailto:admin@findle.global" className="px-6 py-3 rounded-xl border border-slate-700 text-slate-400 hover:border-indigo-500/60 hover:text-white font-bold text-xs uppercase tracking-widest">Email Connect</a> */}
 						<Link href="/contact" className="px-6 py-3 rounded-xl border border-indigo-500/60 text-indigo-300 uppercase tracking-widest font-bold">Book a Free Consultation</Link>
 						<a 

@@ -67,7 +67,7 @@ export default function ContactPage() {
               <div className="space-y-4 text-slate-400">
                 <p><strong>General:</strong> admin@findle.global</p>
                 <p><strong>Partnerships:</strong> connect@findle.global</p>
-                <p><strong>Support:</strong> +1 (437) 432-0003</p>
+                <p><strong>Support:</strong> +1 (905) 805-4955</p>
                 <p className="text-xs text-slate-600 italic">Mon – Fri, 9AM – 6PM EST</p>
               </div>
             </section>
