@@ -113,7 +113,7 @@ export default function GuidePage() {
         <footer className="mt-24 pt-12 border-t border-slate-900 text-center">
           <p className="text-indigo-500 font-bold mb-2">FINDLE GLOBAL</p>
           <p className="text-slate-600 text-sm italic">Discover Tomorrow Today.</p>
-          <p className="text-slate-500 text-xs mt-4">admin@findle.global | +1 (437) 432-0003</p>
+          <p className="text-slate-500 text-xs mt-4">admin@findle.global | +1 (905) 805-4955</p>
         </footer>
       </div>
     </div>

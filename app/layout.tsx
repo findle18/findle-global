@@ -16,8 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Findle Global",
+  metadataBase: new URL("https://www.findle.global"),
+  title: "Pre-Construction Condos, Towns & Homes in Ontario | Findle Global",
   description: "Discover the future of real estate with Findle. Access exclusive preconstruction listings, expert market insights, and advanced tools designed for smarter property investment.",
+  openGraph: {
+    type: "website",
+    siteName: "Findle Global",
+    images: [{ url: "/og-cover.jpg", width: 1200, height: 630, alt: "Findle Global — Discover Tomorrow's Real Estate Today" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-cover.jpg"],
+  },
 };
 
 export default function RootLayout({

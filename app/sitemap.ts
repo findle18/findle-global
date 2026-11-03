@@ -14,7 +14,6 @@ const publicRoutes = [
   "/faq",
   "/FindleFinance",
   "/guide",
-  "/inquire",
   "/marketInsights",
   "/partner",
   "/privacy",

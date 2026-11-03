@@ -274,10 +274,6 @@ export default function Footer() {
   <div className="flex flex-wrap gap-4 text-[10px] text-slate-600">
     {[
       { name: 'Privacy Policy', path: '/privacy' },
-      { name: 'Terms of Use', path: '/terms' },
-      { name: 'Cookie Policy', path: '/cookies' },
-      { name: 'Accessibility', path: '/accessibility' },
-      { name: 'Sitemap', path: '/sitemap' },
     ].map((item, idx, arr) => (
       <span key={item.name} className="flex items-center gap-4">
         <Link 
